@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Recipe Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/hero.png" alt="Delicious Food" />
+    <div class="hero-text">
+      <h2>Welcome to My Kitchen</h2>
+    </div>
+  </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Welcome to my recipe website where I share my favorite dishes and cooking tips!</p>
+    </section>
+    <!-- Recipe Search -->
+    <section id="search">
+      <h2>Subscribe To Our Newsletter!</h2>
+      <input type="text" placeholder="Enter Your Email Address" />
+      <button type="submit">Submit</button>
+    </section>
+    <!-- Recipe Cards -->
+  <section id="recipes" class="recipes">
+    <h2>Featured Recipes</h2>
+    <div class="recipe-card">
+      <a href="recipe-detail.html">
+        <img src="images/recipe1.png" alt="Recipe 1" />
+    </a>
+    <h3>Spicy Beef Curry</h3>
+    </div>
+    <div class="recipe-card">
+      <a href="./recipe-detail.html">
+        <img src="images/recipe3.png" alt="Recipe 2" />
+      </a>
+      <h3>Lasagna</h3>
+    </div>
+    <div class="recipe-card">
+      <a href="./recipe-detail.html">
+        <img src="images/recipe4.png" alt="Recipe 3" />
+      </a>
+      <h3>Pizza</h3>
+    </div>
+    <div class="recipe-card">
+      <a href="./recipe-detail.html">
+        <img src="./images/recipe5.png" alt="Recipe 5" />
+      </a>
+    <h3>Garlic Butter Naan</h3>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Recipe Website | Made by Dharmik Bhuva</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto;
+  background-color: #f9f5f0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.recipes {
+  padding: 40px;
+  text-align: center;
+}
+
+.recipe-card {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+  transition: transform 0.2s;
+}
+
+.recipe-card:hover{
+  transform: scale(1.05);
+}
+.recipe-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recipe-card h3 {
+  margin-top: 10px;
+}
+
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#about {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 40px 0 0 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+#about h2 {
+  margin-bottom: 15px;
+  color: #2d2d2d;
+}
+
+#about p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+#search {
+  background: #fffbe7;
+  padding: 30px 20px;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+#search h2 {
+  margin-bottom: 15px;
+  color: #2d2d2d;
+}
+
+#search input[type="text"] {
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+#search button {
+  padding: 10px 20px;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#search button:hover {
+  background: #e68900;
+}
+
+.about-content {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  margin: 40px auto 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-content h2 {
+  color: #2d2d2d;
+  margin-bottom: 18px;
+  font-size: 2em;
+}
+
+.about-content p {
+  color: #555;
+  font-size: 1.13em;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.about-content img {
+  width: 70%;
+  max-width: 500px;
+  margin-top: 25px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#all_recipes{
+  padding-top: 25px;
+  text-align: center;
+}
+
+/* Make main content grow to push footer down */
+body > header,
+body > section,
+body > main {
+  flex-shrink: 0;
+}
+
+body > footer {
+  margin-top: auto;
+}
+

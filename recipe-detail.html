@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0 auto;
+      background-color: #f9f5f0;
+    }
+
+    /* Recipe container */
+    .recipe-container {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin: auto;
+    }
+
+    /* Recipe header */
+    .recipe-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .recipe-title {
+      font-size: 2.5rem;
+      color: #d35400;
+      margin-bottom: 10px;
+    }
+
+    .recipe-description {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+
+    .recipe-meta {
+      display: inline-block;
+      background-color: #f8f1e7;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+
+    /* Sections styling */
+    .recipe-section {
+      margin: 40px 0;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+    }
+
+    /* Instructions styling */
+    .instructions-list {
+      counter-reset: step-counter;
+      padding-left: 0;
+    }
+
+    .instructions-list li {
+      list-style-type: none;
+      margin-bottom: 20px;
+      padding-left: 50px;
+      position: relative;
+    }
+
+    .instructions-list li::before {
+      content: counter(step-counter);
+      counter-increment: step-counter;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #d35400;
+      color: white;
+      font-weight: bold;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Ingredients and tools styling */
+    .ingredients-list, .tools-list {
+      padding-left: 25px;
+    }
+
+    .ingredients-list li, .tools-list li {
+      margin-bottom: 10px;
+      padding: 8px 0;
+      position: relative;
+    }
+
+    .ingredients-list li::marker, .tools-list li::marker {
+      color: #d35400;
+    }
+
+
+    /* Additional styling for existing elements */
+    header {
+      background-color: #f8f8f8;
+      color: #333;
+      padding: 15px 20px;
+    }
+    footer{
+      background-color: #222;
+      color: #fff;
+      padding: 15px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Recipe Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="recipe-container">
+      <div class="recipe-header">
+        <img src="./images/recipe1.png" alt="Recipe Image" style="width: 100%; max-width: 800px; aspect-ratio: 4/3; object-fit: cover; display: block; margin: auto; border-radius: 10px;"/>
+        <h2 class="recipe-title">Spicy Beef Curry</h2>
+        <p class="recipe-description">This recipe brings the bold flavors of Indian spices combined with tender beef, simmered to perfection.</p>
+        <div class="recipe-meta">
+          <span><strong>Prep Time:</strong> 20 mins</span> | 
+          <span><strong>Cook Time:</strong> 45 mins</span>
+        </div>
+      </div>
+
+      <div class="recipe-section">
+        <h3 class="section-title">Instructions</h3>
+        <ol class="instructions-list">
+          <li>Chop all vegetables and meat into bite-sized pieces. Make sure the beef is cut against the grain for maximum tenderness.</li>
+          <li>Heat oil in a large pot over medium heat. Add your spices and toast them for 30 seconds until fragrant, then add the beef and brown on all sides.</li>
+          <li>Add the onions, garlic, ginger, and tomatoes. Stir well to combine all ingredients and let simmer for 45 minutes, stirring occasionally, until the beef is tender and the sauce has thickened.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-section">
+        <h3 class="section-title">Ingredients</h3>
+        <ul class="ingredients-list">
+          <li>500g beef (chuck or stewing beef), cut into 1-inch cubes</li>
+          <li>2 medium onions, finely chopped</li>
+          <li>2 tbsp cooking oil</li>
+          <li>2 tsp turmeric powder</li>
+          <li>1 tbsp chili powder (adjust to taste)</li>
+          <li>1 tbsp ground cumin</li>
+          <li>3 medium tomatoes, chopped</li>
+          <li>4 cloves garlic, minced</li>
+          <li>1-inch piece of ginger, grated</li>
+        </ul>
+      </div>
+
+      <div class="recipe-section">
+        <h3 class="section-title">Tools</h3>
+        <ul class="tools-list">
+          <li>Sharp knife for chopping</li>
+          <li>Large cooking pot or Dutch oven</li>
+          <li>Wooden stirring spoon</li>
+          <li>Measuring spoons</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Recipe Website | Made by Dharmik Bhuva</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

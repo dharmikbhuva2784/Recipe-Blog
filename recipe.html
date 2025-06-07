@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Recipes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Recipe Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2 id="all_recipes">All Recipes</h2>
+
+    <section id="search">
+      <h2>What Are You Cooking Today ?</h2>
+      <section class="search-section" style="text-align:center; padding: 20px;">
+        <input type="text" id="searchInput" placeholder="Search for a recipe..." style="padding: 10px; width: 60%; font-size: 16px;" />
+      </section>
+      
+    </section>
+
+    <section class="recipes" id="recipes">
+    <div class="recipe-card" data-title="Spicy Beef Curry">
+        <a href="./recipe-detail.html">
+            <img src="./images/recipe1.png" alt="Recipe 1" />
+        </a>
+      <h3>Spicy Beef Curry</h3>
+    </div>
+    <div class="recipe-card" data-title="Lasagna">
+      <a href="./recipe-detail.html">
+        <img src="images/recipe3.png" alt="Recipe 3" />
+      </a>
+      <h3>Lasagna</h3>
+    </div>
+    <div class="recipe-card" data-title="Pizza">
+      <a href="./recipe-detail.html">
+        <img src="images/recipe4.png" alt="Recipe 4" />
+      </a>
+      <h3>Pizza</h3>
+    </div>
+    <div class="recipe-card" data-title="Garlic Butter Naan">
+        <a href="./recipe-detail.html">
+            <img src="./images/recipe5.png" alt="Recipe 5" />
+        </a>
+      <h3>Garlic Butter Naan</h3>
+    </div>
+    <div class="recipe-card" data-title="Veggie Stir Fry">
+        <a href="./recipe-detail.html" >
+            <img src="./images/recipe6.png" alt="Recipe 6" />
+        </a>
+      <h3>Veggie Stir Fry</h3>
+    </div>
+    <div class="recipe-card" data-title="Choco Lava Cake">
+        <a href="./recipe-detail.html" >
+            <img src="./images/recipe7.png" alt="Recipe 7" />
+        </a>
+      <h3>Choco Lava Cake</h3>
+    </div>
+    <div class="recipe-card" data-title="Masala Chai">
+        <a href="./recipe-detail.html" >
+            <img src="./images/recipe8.png" alt="Recipe 8" />
+        </a>
+      <h3>Masala Chai</h3>
+    </div>
+    <div class="recipe-card" data-title="Cheesy Pasta Bake">
+        <a href="./recipe-detail.html">
+            <img src="./images/recipe9.png" alt="Recipe 9" />
+        </a>
+      <h3>Cheesy Pasta Bake</h3>
+    </div>
+    <div class="recipe-card" data-title="Fruit Salad Delight">
+        <a href="./recipe-detail.html">
+            <img src="./images/recipe10.png" alt="Recipe 10" />
+        </a>
+      <h3>Fruit Salad Delight</h3>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Recipe Website | Made by Dharmik Bhuva</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
